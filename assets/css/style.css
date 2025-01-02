@@ -21,6 +21,8 @@
     --tinySpacing: 1rem;
 }
 
+/* General */
+
 main {
     margin-inline: var(--largeSpacing);
 }
