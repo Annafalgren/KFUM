@@ -21,6 +21,10 @@
     --tinySpacing: 1rem;
 }
 
+main {
+    margin-inline: var(--largeSpacing);
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 700;
