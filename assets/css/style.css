@@ -22,6 +22,9 @@
 }
 
 /* General */
+body {
+  background-color: var(--white);
+}
 
 main {
   margin-inline: var(--largeSpacing);
@@ -46,6 +49,64 @@ p {
   font-size: 1rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Outfit", serif;
+}
+
 /* Forside */
 #forside {
+  /* ---Hero--- */
+  .hero {
+    background-image: url(../img/forside/hero.jpg);
+    margin-inline: -4.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  svg {
+    width: 20px;
+  }
+
+  .hero h1 {
+    margin-bottom: 0;
+  }
+
+  .hero h2 {
+    margin-top: 0;
+  }
+
+  .hero h1,
+  .hero h2 {
+    color: var(--white);
+    text-align: center;
+  }
+
+  .cta {
+    text-decoration: none;
+    color: var(--black);
+    padding-block: 10px;
+    padding-inline: 30px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60vw;
+  }
 }
