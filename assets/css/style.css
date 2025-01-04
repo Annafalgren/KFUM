@@ -35,12 +35,14 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.8rem;
+  /* font-size: 4rem; */
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  /* font-size: 3rem; */
   font-weight: 700;
 }
 
@@ -175,3 +177,22 @@ footer i {
 }
 
 /* Footer slut*/
+
+/* Sponsorer */
+#sponsorer {
+  h1,
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  img {
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sponsorContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
