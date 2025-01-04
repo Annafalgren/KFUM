@@ -31,16 +31,18 @@ body {
   font-family: "outfit", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #9696bc;
+  background-color: var(--white);
 }
 
 h1 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -175,3 +177,34 @@ footer i {
 }
 
 /* Footer slut*/
+
+/* Politik */
+#politik {
+  h2 {
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+
+  section p:nth-of-type(1) {
+    margin-top: -20px;
+  }
+
+  section p:nth-of-type(4) {
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin-bottom: 40px;
+  }
+
+  div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: flex-end;
+  }
+}
