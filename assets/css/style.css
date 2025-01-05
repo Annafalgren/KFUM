@@ -31,16 +31,18 @@ body {
   font-family: "outfit", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #9696bc;
+  background-color: var(--white);
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.8rem;
+  /* font-size: 4rem; */
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  /* font-size: 3rem; */
   font-weight: 700;
 }
 
@@ -175,3 +177,53 @@ footer i {
 }
 
 /* Footer slut*/
+
+/* Indmeldelse */
+#indmeldelse {
+  .kontigent {
+    border: solid 1px var(--blackAccents);
+    padding-inline: 20px;
+  }
+
+  .kontigent h2 {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  .line {
+    border: dashed 1px;
+  }
+
+  a {
+    background-color: var(--secondaryAccents);
+    padding-inline: 50px;
+    padding-block: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+
+  h3,
+  h2 {
+    margin-bottom: -15px;
+  }
+
+  .uTeams p {
+    border: solid 1px;
+    padding: 3px;
+    font-size: 0.7rem;
+    margin-top: 9px;
+  }
+
+  .uTeams {
+    display: flex;
+  }
+
+  .uTeams div:nth-of-type(1) {
+    margin-right: 10px;
+  }
+
+  section {
+    margin-bottom: 100px;
+  }
+}
