@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/denBlaaTraad.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -48,38 +49,40 @@
       </nav>
     </header>
     <main id="denBlaaTraad">
-      <section>
-        <h1>Den Blå Tråd</h1>
-        <p>
-          Hvert år starter mange børn til fodbold i Aalborg KFUM. De håber alle
-          på at have det sjovt, blive bedre fodboldspillere og generelt bare
-          nyde legen og læringen i fodbold. Nogle drømmer om at blive den nye
-          Messi, Salah eller Christian Eriksen. Andre kommer til fodbold, fordi
-          det er sjovt, fordi de lærer noget nyt, eller fordi deres venner og
-          veninder også gør.
-        </p>
-        <p>
-          På trods af de forskellige motivationer er det vigtigt at vi sikrer
-          kontinuitet mellem årgangene. Derfor har vi lavet en guide til at gøre
-          det tydeligt hvad børnene bliver træner i på hver årgang, samt hvordan
-          vi griber fodbold an. På denne måde vi sikrer vi den Blå Tråd på hver
-          årgang.
-        </p>
+      <section class="introductionContainer">
+        <article>
+          <h1>Den Blå Tråd</h1>
+          <p>
+            Hvert år starter mange børn til fodbold i Aalborg KFUM. De håber
+            alle på at have det sjovt, blive bedre fodboldspillere og generelt
+            bare nyde legen og læringen i fodbold. Nogle drømmer om at blive den
+            nye Messi, Salah eller Christian Eriksen. Andre kommer til fodbold,
+            fordi det er sjovt, fordi de lærer noget nyt, eller fordi deres
+            venner og veninder også gør.
+          </p>
+          <p>
+            På trods af de forskellige motivationer er det vigtigt at vi sikrer
+            kontinuitet mellem årgangene. Derfor har vi lavet en guide til at
+            gøre det tydeligt hvad børnene bliver træner i på hver årgang, samt
+            hvordan vi griber fodbold an. På denne måde vi sikrer vi den Blå
+            Tråd på hver årgang.
+          </p>
+        </article>
 
         <img src="./assets/img/denBlaaTraad/fodboldTraening.png" alt="" />
       </section>
 
       <section class="buttons">
-        <button>U6</button>
-        <button>U7</button>
-        <button>U8</button>
-        <button>U9</button>
-        <button>U10</button>
-        <button>U11</button>
-        <button>U12</button>
+        <button class="tabBtn" data-id="U6">U6</button>
+        <button class="tabBtn" data-id="U7">U7</button>
+        <button class="tabBtn" data-id="U8">U8</button>
+        <button class="tabBtn" data-id="U9">U9</button>
+        <button class="tabBtn" data-id="U10">U10</button>
+        <button class="tabBtn" data-id="U11">U11</button>
+        <button class="tabBtn" data-id="U12">U12</button>
       </section>
 
-      <section class="content">
+      <section class="content" id="U6">
         <article>
           <h2>U6</h2>
           <h3>Motorisk træning</h3>
