@@ -207,4 +207,10 @@ footer i {
     margin-bottom: 30px;
     align-items: flex-end;
   }
+
+  @media screen and (min-width: 900px) {
+    section {
+      margin-inline: 15vw;
+    }
+  }
 }
