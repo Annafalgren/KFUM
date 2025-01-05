@@ -31,7 +31,7 @@ body {
   font-family: "outfit", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #9696bc;
+  background-color: var(--white);
 }
 
 h1 {
@@ -194,5 +194,23 @@ footer i {
   .sponsorContainer {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 900px) {
+    section img:nth-of-type(1) {
+      width: 500px;
+    }
+
+    .sponsorContainer {
+      display: flex;
+      margin-bottom: var(--mediumSpacing);
+    }
+
+    .sponsorContainer img {
+      flex-grow: 1;
+      width: 20%;
+      margin-left: 20px;
+      object-fit: contain;
+    }
   }
 }
