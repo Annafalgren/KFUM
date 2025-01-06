@@ -178,6 +178,43 @@ footer i {
 
 /* Footer slut*/
 
+/* Kontakt start*/
+.kontaktSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontaktCard {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kontaktSection h1 {
+  font-size: 1,8rem;
+}
+
+.kontaktCard h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.kontaktCard h3 {
+  font-size: 1.5rem;
+}
+
+.kontaktCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kontaktCard ul li {
+  margin: 0.5rem 0;
+}
+/* Kontakt slut*/
+
 /* Kalender start*/
 .kalenderContainer {
   width: 90%;
