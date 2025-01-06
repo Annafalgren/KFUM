@@ -177,6 +177,42 @@ footer i {
 }
 
 /* Footer slut*/
+/* Sponsorer */
+#sponsorer {
+  h1,
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  img {
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sponsorContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 900px) {
+    section img:nth-of-type(1) {
+      width: 500px;
+    }
+
+    .sponsorContainer {
+      display: flex;
+      margin-bottom: var(--mediumSpacing);
+    }
+
+    .sponsorContainer img {
+      flex-grow: 1;
+      width: 20%;
+      margin-left: 20px;
+      object-fit: contain;
+    }
+  }
+}
 
 /* Indmeldelse */
 #indmeldelse {
