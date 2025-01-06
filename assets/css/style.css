@@ -22,6 +22,9 @@
 }
 
 /* General */
+body {
+  background-color: var(--white);
+}
 
 main {
   margin-inline: var(--largeSpacing);
@@ -47,7 +50,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  /* font-size: 2rem; */
   font-weight: 600;
 }
 
@@ -175,6 +179,238 @@ footer i {
   }
 }
 /* Footer slut*/
+
+/* Forside */
+#forside {
+  /* ---Hero--- */
+  .hero {
+    background-image: url(../img/forside/hero.jpg);
+    margin-inline: -4.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  svg {
+    width: 20px;
+  }
+
+  .hero h1 {
+    margin-top: 20vh;
+    margin-bottom: 0;
+  }
+
+  .hero h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .hero h1,
+  .hero h2 {
+    color: var(--white);
+    text-align: center;
+  }
+
+  .cta {
+    text-decoration: none;
+    color: var(--black);
+    padding-block: 10px;
+    padding-inline: 30px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60vw;
+  }
+
+  /* ---Klubnyt--- */
+  .clubNews svg,
+  .matchesAndResults svg {
+    width: 70px;
+    height: 20px;
+  }
+
+  .clubNews h2,
+  .matchesAndResults h2 {
+    margin-left: -4.5rem;
+  }
+
+  .clubNews h3 {
+    margin-top: 0;
+  }
+
+  .clubNews article {
+    margin-bottom: 30px;
+  }
+
+  .clubNews a {
+    margin-top: -20px;
+    text-decoration: none;
+    color: var(--blackAccents);
+    display: flex;
+    align-items: center;
+  }
+  /* ---Sponsorer--- */
+  .sponsors {
+    margin-top: 10px;
+    background-color: var(--primary);
+    padding-block: 20px;
+    margin-inline: -4.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sponsors img {
+    width: 10vw;
+    height: 100%;
+  }
+
+  /* ---Kampe og resultater--- */
+  .matchesAndResults article {
+    border: 2px solid var(--black);
+    padding-block: 100px;
+    margin-bottom: 20px;
+  }
+
+  .matchesAndResults h2 {
+    margin-bottom: 10px;
+  }
+
+  .matchesAndResults img {
+    width: 55px;
+    margin-inline: 20px;
+  }
+
+  .matchesAndResults div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .matchesAndResults div p {
+    display: flex;
+    align-items: center;
+  }
+
+  .matchesAndResults div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .matchesAndResults div:nth-of-type(2) {
+    display: flex;
+    align-content: center;
+  }
+
+  .result {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .matchesAndResults a {
+    margin-top: 15px;
+    margin-bottom: -70px;
+    display: flex;
+    justify-content: center;
+    padding-block: 6px;
+    margin-inline: 50px;
+  }
+
+  .matchesAndResults h4 {
+    margin-top: -80px;
+  }
+
+  .matchesAndResults p,
+  h4 {
+    margin-bottom: 0;
+  }
+  /* ---Fodboldklub--- */
+  .joinTheClub p {
+    margin-top: 10px;
+  }
+
+  .joinTheClub h2 {
+    margin-bottom: 0;
+  }
+
+  .joinTheClub a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 2px;
+    margin-right: 20vw;
+    margin-bottom: 15px;
+  }
+
+  /* Media Quries */
+  @media screen and (min-width: 1200px) {
+    .clubNews div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .clubNews img {
+      height: 70%;
+      object-fit: cover;
+    }
+
+    .clubNews article:nth-of-type(1) {
+      margin-right: 40px;
+    }
+
+    .clubNews article:nth-of-type(3) {
+      margin-left: 40px;
+    }
+
+    .clubNews a {
+      margin-top: -80px;
+      margin-bottom: var(--mediumSpacing);
+    }
+
+    .matchesAndResultsContainer {
+      display: flex;
+      flex-direction: row !important;
+      justify-content: space-between !important;
+      flex-wrap: wrap;
+    }
+
+    .matchesAndResultsContainer article {
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+
+    .joinTheClub {
+      margin-top: var(--mediumSpacing);
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+    .joinTheClub img {
+      margin-left: 8vw;
+      margin-right: 30px;
+      height: 10%;
+      width: 40%;
+    }
+    .joinTheClub div {
+      margin-right: 8vw;
+    }
+  }
+}
 
 /* Bestyrelse/personale start*/
 section.bestyrelse {
