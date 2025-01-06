@@ -31,15 +31,18 @@ body {
   font-family: "outfit", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--white);
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.8rem;
+  /* font-size: 4rem; */
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  /* font-size: 3rem; */
   font-weight: 700;
 }
 
@@ -218,3 +221,292 @@ footer i {
   border: none;
 }
 /* Mission slut*/
+
+/* Kontakt start*/
+.kontaktSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontaktCard {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kontaktSection h1 {
+  font-size: 1,8rem;
+}
+
+.kontaktCard h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.kontaktCard h3 {
+  font-size: 1.5rem;
+}
+
+.kontaktCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kontaktCard ul li {
+  margin: 0.5rem 0;
+}
+/* Kontakt slut*/
+
+/* Kalender start*/
+.kalenderContainer {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filterMuligheder {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterMuligheder select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: var(--whiteAccents);
+}
+
+.begivenhed {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.begivenhedDato {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  width: 60px;
+}
+
+.begivenhedDato .dag {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.begivenhedDetaljer h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Kalender slut*/
+
+/* Politik */
+#politik {
+  h2 {
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+
+  section p:nth-of-type(1) {
+    margin-top: -20px;
+  }
+
+  section p:nth-of-type(4) {
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin-bottom: 40px;
+  }
+
+  div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: 900px) {
+    section {
+      margin-inline: 15vw;
+    }
+  }
+}
+/* Politik slut */
+
+/* Sponsorer */
+#sponsorer {
+  h1,
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  img {
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sponsorContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 900px) {
+    section img:nth-of-type(1) {
+      width: 500px;
+    }
+
+    .sponsorContainer {
+      display: flex;
+      margin-bottom: var(--mediumSpacing);
+    }
+
+    .sponsorContainer img {
+      flex-grow: 1;
+      width: 20%;
+      margin-left: 20px;
+      object-fit: contain;
+    }
+  }
+}
+/* Sponsorer slut */
+
+/* Indmeldelse */
+#indmeldelse {
+  .kontigent {
+    border: solid 1px var(--blackAccents);
+    padding-inline: 20px;
+  }
+
+  .kontigent h2 {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  .line {
+    border: dashed 1px;
+  }
+
+  a {
+    background-color: var(--secondaryAccents);
+    padding-inline: 50px;
+    padding-block: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+
+  h3,
+  h2 {
+    margin-bottom: -15px;
+  }
+
+  .uTeams p {
+    border: solid 1px;
+    padding: 3px;
+    font-size: 0.7rem;
+    margin-top: 9px;
+  }
+
+  .uTeams {
+    display: flex;
+  }
+
+  .uTeams div:nth-of-type(1) {
+    margin-right: 10px;
+  }
+
+  section {
+    margin-bottom: 100px;
+  }
+}
+/* indmeldelse slut */
+
+/* Den Blå Tråd */
+#denBlaaTraad {
+  h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 2px;
+    font-family: "outfit", sans-serif;
+    font-size: 1rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .content.active {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  .tabBtn.active {
+    background-color: var(--white);
+    color: var(--primaryAccents);
+    border: solid var(--primaryAccents);
+  }
+
+  .tabBtn:hover {
+    transition: 0.3s;
+    background-color: var(--primaryHover);
+  }
+
+  .content article:nth-last-of-type(2) {
+    margin-right: 50px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    .introductionContainer {
+      display: flex;
+    }
+
+    .introductionContainer article {
+      margin-right: 40px;
+    }
+  }
+}
+
+/* Den Blå Tråd slut */
