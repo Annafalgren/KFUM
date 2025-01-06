@@ -197,7 +197,7 @@ footer i {
   padding: 8px;
   border: 1px solid #ccc;
   font-size: 1rem;
-  background-color:var(--whiteAccents);
+  background-color: var(--whiteAccents);
 }
 
 .begivenhed {
@@ -218,7 +218,6 @@ footer i {
   font-size: 3rem;
   font-weight: bold;
 }
-
 
 .begivenhedDetaljer h3 {
   font-size: 1rem;
@@ -258,11 +257,12 @@ footer i {
   }
 
   @media screen and (min-width: 900px) {
-      section {
+    section {
       margin-inline: 15vw;
     }
   }
 }
+/* Politik slut */
 
 /* Sponsorer */
 #sponsorer {
@@ -300,6 +300,7 @@ footer i {
     }
   }
 }
+/* Sponsorer slut */
 
 /* Indmeldelse */
 #indmeldelse {
@@ -350,6 +351,7 @@ footer i {
     margin-bottom: 100px;
   }
 }
+/* indmeldelse slut */
 
 /* Den Blå Tråd */
 #denBlaaTraad {
@@ -425,3 +427,5 @@ footer i {
     }
   }
 }
+
+/* Den Blå Tråd slut */
