@@ -178,6 +178,55 @@ footer i {
 
 /* Footer slut*/
 
+/* Kalender start*/
+.kalenderContainer {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filterMuligheder {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterMuligheder select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color:var(--whiteAccents);
+}
+
+.begivenhed {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.begivenhedDato {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  width: 60px;
+}
+
+.begivenhedDato .dag {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+.begivenhedDetaljer h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Kalender slut*/
+
 /* Politik */
 #politik {
   h2 {
