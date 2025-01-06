@@ -178,6 +178,16 @@ footer i {
 
 /* Footer slut*/
 
+/* Nyheder start*/
+.nyheder h1{
+  font-size: 2rem;
+}
+
+.nyheder h2{
+  font-size: 1.5rem;
+}
+/* Nyheder slut*/
+
 /* Mission start*/
 .missionSection h1 {
   font-size: 1.8rem;
