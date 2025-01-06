@@ -30,14 +30,21 @@ main {
   margin-inline: var(--largeSpacing);
 }
 
+body {
+  font-family: "outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
 h1 {
-  font-size: 2.5rem;
-  /* font-size: clamp(1.5rem, 4rem, 4.5rem);*/
+  font-size: 2.8rem;
+  /* font-size: 4rem; */
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   /* font-size: 3rem; */
   font-weight: 700;
 }
@@ -52,22 +59,126 @@ p {
   font-size: 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
+/* Navigation start */
 a {
-  font-family: "Outfit", serif;
-}
-
-.btn {
-  background-color: var(--primary);
   text-decoration: none;
   color: var(--white);
 }
+
+li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 70px;
+  padding-block: 30px;
+  align-items: center;
+}
+
+.navbar {
+  align-items: center;
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-inline: 10px;
+}
+
+.NJBLogo {
+  display: block;
+  width: 10rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.NJBLogotest {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .NJBLogo {
+    display: none;
+  }
+
+  .NJBLogotest {
+    display: flex;
+    width: 10rem;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 40px;
+    color: var(--white);
+    z-index: 2;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+
+    padding-top: 6rem;
+
+    text-align: center;
+    background-color: var(--primary);
+
+    transition: 0.15s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    margin-block: 0.5rem;
+  }
+  .navbar.active {
+    right: 0;
+  }
+}
+/* Baseret på: https://dev.to/luwadev/how-to-create-a-simple-mobile-responsive-navigation-bar-with-html-css-and-javascript-341h */
+/* Navigation slut */
+
+/* Footer start*/
+footer {
+  background-color: var(--primary);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: var(--white);
+}
+
+footer li {
+  margin: 0.5rem;
+}
+
+footer i {
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/* Footer slut*/
 
 /* Forside */
 #forside {
@@ -300,3 +411,389 @@ a {
     }
   }
 }
+
+/* Bestyrelse/personale start*/
+section.bestyrelse {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+article.card {
+  background-color: var(--primary);
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+article.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+section.bestyrelse h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+article.card h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: var(--white);
+}
+
+article.card p {
+  margin: 5px 0;
+  color: var(--white);
+}
+/* Bestyrelse/personale slut*/
+
+/* Nyheder start*/
+.nyheder h1{
+  font-size: 2rem;
+}
+
+.nyheder h2{
+  font-size: 1.5rem;
+}
+/* Nyheder slut*/
+
+/* Mission start*/
+.missionSection h1 {
+  font-size: 1.8rem;
+}
+
+/* Værdier sektion */
+.vaerdierSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vaerdierCard {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+}
+
+.vaerdierCard h3 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Den Blå Tråd sektion */
+.blaaTraadSection h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.blaaTraadSection p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blaaTraadButton {
+  background-color: var(--primaryAccents);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border: none;
+}
+/* Mission slut*/
+
+/* Kontakt start*/
+.kontaktSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontaktCard {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kontaktSection h1 {
+  font-size: 1,8rem;
+}
+
+.kontaktCard h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.kontaktCard h3 {
+  font-size: 1.5rem;
+}
+
+.kontaktCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kontaktCard ul li {
+  margin: 0.5rem 0;
+}
+/* Kontakt slut*/
+
+/* Kalender start*/
+.kalenderContainer {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filterMuligheder {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterMuligheder select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: var(--whiteAccents);
+}
+
+.begivenhed {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.begivenhedDato {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  width: 60px;
+}
+
+.begivenhedDato .dag {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.begivenhedDetaljer h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Kalender slut*/
+
+/* Politik */
+#politik {
+  h2 {
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+
+  section p:nth-of-type(1) {
+    margin-top: -20px;
+  }
+
+  section p:nth-of-type(4) {
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin-bottom: 40px;
+  }
+
+  div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: 900px) {
+    section {
+      margin-inline: 15vw;
+    }
+  }
+}
+/* Politik slut */
+
+/* Sponsorer */
+#sponsorer {
+  h1,
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  img {
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sponsorContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 900px) {
+    section img:nth-of-type(1) {
+      width: 500px;
+    }
+
+    .sponsorContainer {
+      display: flex;
+      margin-bottom: var(--mediumSpacing);
+    }
+
+    .sponsorContainer img {
+      flex-grow: 1;
+      width: 20%;
+      margin-left: 20px;
+      object-fit: contain;
+    }
+  }
+}
+/* Sponsorer slut */
+
+/* Indmeldelse */
+#indmeldelse {
+  .kontigent {
+    border: solid 1px var(--blackAccents);
+    padding-inline: 20px;
+  }
+
+  .kontigent h2 {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  .line {
+    border: dashed 1px;
+  }
+
+  a {
+    background-color: var(--secondaryAccents);
+    padding-inline: 50px;
+    padding-block: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+
+  h3,
+  h2 {
+    margin-bottom: -15px;
+  }
+
+  .uTeams p {
+    border: solid 1px;
+    padding: 3px;
+    font-size: 0.7rem;
+    margin-top: 9px;
+  }
+
+  .uTeams {
+    display: flex;
+  }
+
+  .uTeams div:nth-of-type(1) {
+    margin-right: 10px;
+  }
+
+  section {
+    margin-bottom: 100px;
+  }
+}
+/* indmeldelse slut */
+
+/* Den Blå Tråd */
+#denBlaaTraad {
+  h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 2px;
+    font-family: "outfit", sans-serif;
+    font-size: 1rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .content.active {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  .tabBtn.active {
+    background-color: var(--white);
+    color: var(--primaryAccents);
+    border: solid var(--primaryAccents);
+  }
+
+  .tabBtn:hover {
+    transition: 0.3s;
+    background-color: var(--primaryHover);
+  }
+
+  .content article:nth-last-of-type(2) {
+    margin-right: 50px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    .introductionContainer {
+      display: flex;
+    }
+
+    .introductionContainer article {
+      margin-right: 40px;
+    }
+  }
+}
+
+/* Den Blå Tråd slut */
