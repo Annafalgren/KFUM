@@ -60,6 +60,207 @@ p {
   font-size: 1rem;
 }
 
+/* Forside: navigation start */
+#forsideNav {
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  li {
+    list-style: none;
+  }
+
+  nav {
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 70px;
+    padding-block: 30px;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar {
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+  }
+
+  .navbar ul li {
+    margin-inline: 10px;
+  }
+
+  .NJBLogo {
+    display: block;
+    width: 10rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .NJBLogotest {
+    display: none;
+  }
+
+  .menu li {
+    position: relative;
+  }
+
+  .menu a {
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+    padding-inline: 20px;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    display: none;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .menu li:hover > .submenu {
+    display: block;
+  }
+
+  .submenu2 {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 160px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--whiteAccents);
+    display: none;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .menu li:hover > .submenu2 {
+    display: block;
+  }
+  .whiteNav {
+    color: var(--white);
+  }
+
+  /* mobil */
+  @media screen and (max-width: 900px) {
+    nav {
+      z-index: 6;
+      position: static;
+    }
+
+    nav .menu-icon,
+    nav .logo {
+      position: absolute;
+      z-index: 5;
+    }
+
+    i {
+      color: var(--white);
+    }
+
+    nav .logo {
+      left: 20px;
+      top: 20px;
+    }
+
+    nav .menu-icon {
+      right: 20px;
+      top: 30px;
+    }
+
+    .navbar a {
+      color: white;
+    }
+
+    .submenu {
+      position: relative;
+      top: 1%;
+      left: 0;
+      background-color: var(--primary);
+      width: 140px;
+      display: none;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    .submenu2 {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 160px;
+      background-color: var(--primary);
+      display: none;
+    }
+
+    .NJBLogo {
+      display: none;
+    }
+
+    .NJBLogotest {
+      display: flex;
+      width: 10rem;
+    }
+
+    .menu-icon {
+      display: block;
+      font-size: 40px;
+      color: var(--black);
+      z-index: 5;
+    }
+
+    .navbar {
+      z-index: 4 !important;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      bottom: 0;
+      width: 100%;
+
+      padding-top: 6rem;
+
+      text-align: center;
+      background-color: var(--primary);
+
+      transition: 0.15s ease-in-out;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar ul {
+      flex-direction: column;
+    }
+
+    .navbar ul li {
+      margin-block: 0.5rem;
+    }
+    .navbar.active {
+      right: 0;
+    }
+  }
+}
+/* Baseret på: https://dev.to/luwadev/how-to-create-a-simple-mobile-responsive-navigation-bar-with-html-css-and-javascript-341h */
+/* Forside Navigation slut */
+
 /* Navigation start */
 a {
   text-decoration: none;
@@ -263,12 +464,13 @@ footer i {
 #forside {
   /* ---Hero--- */
   .hero {
+    margin-top: -60px;
     background-image: url(../img/forside/hero.jpg);
     margin-inline: -4.5rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 65vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -439,6 +641,14 @@ footer i {
 
   /* Media Quries */
   @media screen and (min-width: 1200px) {
+    .hero {
+      margin-top: -150px;
+    }
+
+    .hero h1 {
+      margin-top: 200px;
+      font-size: 4rem;
+    }
     .clubNews div {
       display: flex;
       justify-content: space-between;
@@ -590,7 +800,76 @@ article.card p {
 /* Nyheder slut*/
 
 /* Enkelt nyhed start */
-@media screen and (min-width: 900px) {
+#enkeltNyhed {
+  .nyhed img {
+    width: 100%;
+  }
+
+  .nyhed a {
+    display: flex;
+    align-items: center;
+  }
+
+  .desktopImg {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media screen and (min-width: 1100px) {
+    section {
+      margin-inline: 6rem;
+    }
+
+    .desktop {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .nyhed img {
+      width: 26vw;
+      margin-left: 10vw;
+      margin-bottom: 20px;
+    }
+
+    .desktopImg {
+      display: block;
+    }
+
+    .mobileImg {
+      display: none;
+    }
+
+    .nyhed article {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .moreNews {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .moreNews h3 {
+      word-wrap: break-word;
+      margin-top: 12px;
+    }
+
+    .moreNews img {
+      object-fit: cover;
+    }
+
+    .nyheder {
+      width: 26vw;
+    }
+  }
 }
 
 /* Enkelt nyhed slut */
