@@ -71,6 +71,7 @@ li {
 }
 
 nav {
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   padding-inline: 70px;
@@ -83,8 +84,14 @@ nav {
   text-align: center;
 }
 
-.navbar ul {
+.menu {
   display: flex;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
 }
 
 .navbar ul li {
@@ -104,7 +111,76 @@ nav {
   display: none;
 }
 
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--white);
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  display: none;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.submenu2 {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--whiteAccents);
+  display: none;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.menu li:hover > .submenu2 {
+  display: block;
+}
+
 @media screen and (max-width: 900px) {
+  .navbar a {
+    color: white;
+  }
+
+  .submenu {
+    position: relative;
+    top: 1%;
+    left: 0;
+    background-color: var(--primary);
+    width: 140px;
+    display: none;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .submenu2 {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 160px;
+    background-color: var(--primary);
+    display: none;
+  }
+
   .NJBLogo {
     display: none;
   }
@@ -118,10 +194,11 @@ nav {
     display: block;
     font-size: 40px;
     color: var(--black);
-    z-index: 2;
+    z-index: 5;
   }
 
   .navbar {
+    z-index: 4 !important;
     position: absolute;
     top: 0;
     right: -100%;
@@ -154,6 +231,7 @@ nav {
 
 /* Footer start*/
 footer {
+  margin-top: var(--mediumSpacing);
   background-color: var(--primary);
   padding: 1rem;
   display: flex;
